@@ -15,5 +15,4 @@ dependencies[] = search
 dependencies[] = strongarm
 dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
-features[fe_block_settings][] = menu-content-management
 features[features_api][] = api:2

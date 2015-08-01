@@ -1,0 +1,120 @@
+section {
+  &.module {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-family: "Roboto Slab", serif;
+      font-size: 30px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 300;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.content {
+      padding: 40px 0;
+    }
+
+    &.parallax, &.parallax-after {
+      min-height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      h1 {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+      }
+    }
+
+    &.parallax-after {
+      &.content {
+        padding:0;
+        margin-bottom: 20px;
+      }
+    }
+
+    .center-wrapper {
+      display: table;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .center-inner {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+}
+
+@media all and (min-width: @screen-xs) {
+  section {
+    &.module {
+      h2 {
+        font-size: 42px;
+      }
+      p {
+        font-size: 20px;
+      }
+
+      &.parallax, &.parallax-after {
+        h1 {
+          -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: black;
+          font-size: 96px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: @screen-desktop) {
+  section {
+    &.module {
+      &.parallax, &.parallax-after {
+        h1 {
+          font-size: 160px;
+          -webkit-text-stroke-width: 4px;
+          -webkit-text-stroke-color: black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  section {
+    &.module {
+      .parallax-bg {
+        width: 100%;
+        visibility: hidden;
+      }
+
+      &.parallax, &.parallax-after {
+        background-attachment: scroll;
+        min-height: 0;
+      }
+    }
+  }
+}

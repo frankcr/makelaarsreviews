@@ -1,0 +1,15 @@
+name = sftw
+description = sftw bootstrap theme.
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+
+plugins[panels][layouts] = layouts
+plugins[panels][styles] = panels/styles
+scripts[] = js/bootstrap.min.js
+scripts[] = js/hammer.js
+scripts[] = js/scripts.js
+stylesheets[all][] = css/bootstrap.css

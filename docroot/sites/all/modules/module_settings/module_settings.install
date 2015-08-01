@@ -28,23 +28,29 @@ function module_settings_update_7001() {
 }
 
 /**
- * Enable rubik left and content management.
+ * Enable mr main theme.
  */
-//function module_settings_update_7003() {
-//  theme_enable(array(
-//    'sftw',
-//  ));
-//  variable_set('theme_default', 'sftw');
-//}
+function module_settings_update_7002() {
+  theme_enable(array(
+    'mr',
+  ));
+  variable_set('theme_default', 'mr');
+}
 
 /**
- * Enable special menu items.
+ * Enable special menu items, block settings, panels, view panes and pathauto.
  */
-//function module_settings_update_7004() {
-//  module_enable(array(
-//    'special_menu_items'
-//  ));
-//}
+function module_settings_update_7003() {
+  module_enable(array(
+    'special_menu_items',
+    'block_settings',
+    'panels_ipe',
+    'views_content',
+    'pathauto',
+    'pathauto_persist',
+  ));
+  variable_set('page_manager_node_view_disabled', 0);
+}
 
 /**
  * Enable image_url_formatter.
@@ -52,33 +58,6 @@ function module_settings_update_7001() {
 //function module_settings_update_7005() {
 //  module_enable(array(
 //    'image_url_formatter'
-//  ));
-//}
-/**
- * Enable panes and panels.
- */
-//function module_settings_update_7006() {
-//  module_enable(array(
-//    'panels_ipe',
-//    'views_content',
-//  ));
-//}
-
-/**
- * Enable node view page.
- */
-//function module_settings_update_7007() {
-//  variable_set('page_manager_node_view_disabled', 0);
-//}
-
-/**
- * Enable pathauto, draggable views and pathauto persist.
- */
-//function module_settings_update_7008() {
-//  module_enable(array(
-//    'pathauto',
-//    'pathauto_persist',
-//    'draggableviews',
 //  ));
 //}
 
