@@ -1,0 +1,4 @@
+.locale-untranslated { text-decoration: none; }
+  .locale-untranslated a { color: #9acbe9; }
+.locale-translated { font-weight: bold; }
+  .locale-translated.locale-unpublished a { color: #e77a66; }  

@@ -1,0 +1,10 @@
+name = Views Languages Field
+description = A new node field with all languages the node is available in
+package = Views
+core = 7.x
+files[] = views_handler_field_translation_controls.inc
+files[] = views_languages_field.module
+files[] = views_languages_field.views.inc
+
+dependencies[] = locale
+dependencies[] = i18n_node

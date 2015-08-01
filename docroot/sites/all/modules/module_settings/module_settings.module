@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Code for the Module Settings feature.
+ */
+
+include_once 'module_settings.features.inc';
+/**
+ * @file
+ */

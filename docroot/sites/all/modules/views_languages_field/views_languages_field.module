@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function views_languages_field_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'views_languages_field'),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function views_languages_field_theme($existing, $type, $theme, $path) {
+  $hooks = array();
+  
+  $hooks['views_languages_field_link'] = array(
+    'variables' => array(
+    	'link' => NULL, 
+    	'translated' => NULL,
+      'published' => NULL,
+    ),
+    'file' => 'views_languages_field.theme.inc',
+  );
+  
+  return $hooks;
+}

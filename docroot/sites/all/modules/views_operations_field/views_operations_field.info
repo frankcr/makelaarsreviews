@@ -1,0 +1,9 @@
+name = Views operations field
+description = Custom field for Views that bundles links for common node operations like Edit and Delete
+package = Views
+dependencies[] = views
+dependencies[] = variable
+core = 7.x
+files[] = views_handler_field_node_operations.inc
+files[] = views_operations_field.module
+files[] = views_operations_field.views.inc

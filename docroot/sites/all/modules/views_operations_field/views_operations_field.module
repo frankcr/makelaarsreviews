@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ */
+
+// Hook implementations for important contrib-modules.
+require_once drupal_get_path('module', 'views_operations_field') . '/modules/node.inc';
+require_once drupal_get_path('module', 'views_operations_field') . '/modules/panels_node.inc';
+require_once drupal_get_path('module', 'views_operations_field') . '/modules/webform.inc';
+
+/**
+ * Implements hook_views_api().
+ */
+function views_operations_field_views_api() {
+  return array(
+    'api' => 2,
+  );
+}

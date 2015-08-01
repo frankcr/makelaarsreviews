@@ -1,0 +1,12 @@
+name = Rubik Left
+description = A subtheme of Rubik with a region on the left side.
+base theme = rubik
+core = 7.x
+
+stylesheets[screen][] = css/rubik_left.css
+
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom

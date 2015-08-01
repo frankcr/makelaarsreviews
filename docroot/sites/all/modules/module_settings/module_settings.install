@@ -1,0 +1,178 @@
+<?php
+
+/**
+ * Implements hook_install()
+ */
+function module_settings_install() {
+  for ($v = 0; $v < 99; $v++) {
+    $function = 'module_settings_update_7' . str_pad($v, 3, '0', STR_PAD_LEFT);
+    if (function_exists($function)) {
+      call_user_func($function);
+    }
+  }
+}
+
+/**
+ * Enable rubik left and content management.
+ */
+function module_settings_update_7001() {
+  theme_enable(array(
+    'tao',
+    'rubik',
+    'rubik_left'
+  ));
+  variable_set('admin_theme', 'rubik_left');
+  module_enable(array(
+    'content_management'
+  ));
+}
+
+/**
+ * Enable rubik left and content management.
+ */
+//function module_settings_update_7003() {
+//  theme_enable(array(
+//    'sftw',
+//  ));
+//  variable_set('theme_default', 'sftw');
+//}
+
+/**
+ * Enable special menu items.
+ */
+//function module_settings_update_7004() {
+//  module_enable(array(
+//    'special_menu_items'
+//  ));
+//}
+
+/**
+ * Enable image_url_formatter.
+ */
+//function module_settings_update_7005() {
+//  module_enable(array(
+//    'image_url_formatter'
+//  ));
+//}
+/**
+ * Enable panes and panels.
+ */
+//function module_settings_update_7006() {
+//  module_enable(array(
+//    'panels_ipe',
+//    'views_content',
+//  ));
+//}
+
+/**
+ * Enable node view page.
+ */
+//function module_settings_update_7007() {
+//  variable_set('page_manager_node_view_disabled', 0);
+//}
+
+/**
+ * Enable pathauto, draggable views and pathauto persist.
+ */
+//function module_settings_update_7008() {
+//  module_enable(array(
+//    'pathauto',
+//    'pathauto_persist',
+//    'draggableviews',
+//  ));
+//}
+
+/**
+ * Enable basic pages feature.
+ */
+//function module_settings_update_7009() {
+//  module_enable(array(
+//    'sftw_basic_pages',
+//  ));
+//}
+
+/**
+ * Disable rdf and enable metatag support.
+ */
+//function module_settings_update_7010() {
+//  module_disable(array(
+//    'rdf',
+//  ));
+//
+//  module_enable(array(
+//    'metatag',
+//    'metatag_dc',
+//    'metatag_facebook',
+//    'metatag_twitter_cards',
+//    'metatag_google_plus',
+//    'metatag_opengraph',
+//  ));
+//}
+
+/**
+ * Enable diff.
+ */
+//function module_settings_update_7011() {
+//  module_enable(array(
+//    'diff',
+//  ));
+//}
+
+/**
+ * Enable varnish, expire.
+ */
+//function module_settings_update_7012() {
+//  module_enable(array(
+//    'varnish',
+//    'expire'
+//  ));
+//}
+
+/**
+ * Enable advagg.
+ */
+//function module_settings_update_7013() {
+//  module_enable(array(
+//    'advagg',
+//    'advagg_js_compress',
+//    'advagg_css_compress',
+//  ));
+//}
+
+/**
+ * Enable webforms.
+ */
+//function module_settings_update_7014() {
+//  module_enable(array(
+//    'webform',
+//  ));
+//}
+
+/**
+ * Enable webforms email reply and smtp.
+ */
+//function module_settings_update_7015() {
+//  module_enable(array(
+//    'smtp',
+//    'webform_email_reply',
+//  ));
+//}
+
+/**
+ * Enable advagg_mod.
+ */
+//function module_settings_update_7016() {
+//  module_enable(array(
+//    'advagg_mod',
+//  ));
+//}
+
+/**
+ * Enable imageapi_optimize.
+ */
+//function module_settings_update_7017() {
+//  module_enable(array(
+//    'imageapi_optimize',
+//  ));
+//}
+
